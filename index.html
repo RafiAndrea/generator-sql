@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <form id="sqlForm">
+            <div>
+                <label for="tableName">Nama Tabel:</label><br>
+                <input type="text" id="tableName" name="tableName">
+            </div>
+            <div>
+                <label for="tableEntities">Entitas Tabel (pisahkan dengan koma):</label><br>
+                <input type="text" id="tableEntities" name="tableEntities">
+            </div>
+            <div>
+                <label for="dataCount">Jumlah Data:</label><br>
+                <input type="number" id="dataCount" name="dataCount">
+            </div>
+            <div id="inputContainer"></div>
+            <button type="button" id="btn-init">Generate SQL Output</button>
+        </form>
+        
+        <div id="sqlOutput"></div>
+               
+    </div>
+</body>
+</html>
